@@ -3,7 +3,7 @@ import WatchTrailer from "../../../components/watchtrailer";
 import { Calendar, Clock, Star } from "lucide-react";
 import Link from "next/link";
 
-const page = async (props: { params: { id: number } }) => {
+const page = async (props: { params: { id: string } }) => {
   const TMDB_API_KEY = "7d2cf79eb5770a2238f554381dbd7f0f";
   const id = props.params.id;
 
