@@ -137,7 +137,7 @@ import Link from "next/link";
 
 const page = async (props: { params: { id: string } }) => {
   const TMDB_API_KEY = "7d2cf79eb5770a2238f554381dbd7f0f";
-  const id = props.params.id;
+  const id = parseInt(props.params.id);
 
   const movieData = await fetch(
     `https://api.themoviedb.org/3/movie/${id}?api_key=${TMDB_API_KEY}&language=en-US`
